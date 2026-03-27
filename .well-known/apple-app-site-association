@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["243FHK663T.com.marina.manenomaster"],
+        "components": [
+          {
+            "/": "/challenge*"
+          }
+        ]
+      }
+    ]
+  }
+}
