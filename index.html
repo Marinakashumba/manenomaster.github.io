@@ -7,15 +7,18 @@
   <script>
     const params = new URLSearchParams(window.location.search);
     const word = params.get('word');
+    const difficulty = params.get('difficulty') || 'easy'; // default if missing
 
     if (word) {
-      window.location = `manenomaster://challenge?word=${word}`;
+      // Redirect to your app with both parameters
+      window.location = `manenomaster://challenge?word=${word}&difficulty=${difficulty}`;
     }
 
+    // Fallback to App Store if app not installed
     setTimeout(() => {
       window.location = 'https://apps.apple.com/app/idYOUR_APP_ID';
     }, 2000);
-  </script>
+</script>
 </head>
 <body style="font-family: sans-serif; text-align: center; padding: 40px; background: #f5f5f5;">
   <img src="your-logo-url" width="80" style="margin-bottom: 20px;"/>
