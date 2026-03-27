@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maneno Master Challenge</title>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const word = params.get('word');
+
+    if (word) {
+      window.location = `manenomaster://challenge?word=${word}`;
+    }
+
+    setTimeout(() => {
+      window.location = 'https://apps.apple.com/app/idYOUR_APP_ID';
+    }, 2000);
+  </script>
+</head>
+<body style="font-family: sans-serif; text-align: center; padding: 40px; background: #f5f5f5;">
+  <img src="your-logo-url" width="80" style="margin-bottom: 20px;"/>
+  <h1 style="color: #1E2A56;">Maneno Master</h1>
+  <p style="font-size: 18px;">Inafungua mchezo...</p>
+  <div style="margin-top: 40px;">
+    <p>Huna mchezo bado?</p>
+    <a href="https://apps.apple.com/app/idYOUR_APP_ID" 
+       style="background: #1E2A56; color: white; padding: 12px 24px; 
+              border-radius: 8px; text-decoration: none; font-size: 16px;">
+      Pakua Maneno Master
+    </a>
+  </div>
+</body>
+</html>
+```
+
+**4. Create a file called `CNAME`** (no extension) in the same repo with just:
+```
+manenomaster.app
